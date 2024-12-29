@@ -1,0 +1,39 @@
+.navbar{
+       background-color: rgb(184, 106, 106);
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+.links{
+    list-style-type: none;
+    gap: 30px;
+    display: flex;
+}
+.button{
+    background-color: white;
+    border: 1px solid white ;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+.button:hover{
+    background-color: rgb(209, 173, 173);
+    border: 1px solid rgb(209, 173, 173);
+    transform: scale(1.1);
+    transition: 1s;
+}
+@media screen and (max-width:600px) {
+    .navbar{
+        flex-direction: column;
+        background-color: rgb(112, 114, 111);
+    }
+    .links{
+        flex-direction: column;
+        color: white;
+    }
+}
